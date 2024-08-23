@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>este video esta hospedado no meu proprio servidor</p>
+    <video src="midia/meu-video.mp4" width="500" controls ></video><!--tambem posso colocar videos em mfv, webm, ogv. Coloque todos, pois nem todos os navegadores sao compativeis, por exemplo o safari nao suporta ogv-->
+
+    <video width="500" poster="imagens/Captura de tela 2022-06-16 191024.png" controls>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+        <!--eu nao tenho os outros arquivos mas é so fazer isso aí-->
+    </video>
+    <h1>Inserindo videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=gj_a3W8vkoIYiF7q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

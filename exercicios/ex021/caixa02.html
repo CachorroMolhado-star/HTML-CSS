@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+            box-shadow: inset 2px 1px 14px 6px rgba(0, 0, 0, 0.459);
+        }
+        nav{
+            background-color: lightslategrey;
+            padding: 3px;
+            box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.295); /*horizontal, vertical, espalhamento e sombra*/
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+
+        }
+        a:hover{
+            color: red;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 40px;
+        }
+
+        article{
+            background-color: lightgrey;
+            border-radius: 10px 30px 0px 20px;
+        }
+
+        article > aside{
+            background-color: rgb(155, 148, 148);
+            border-radius: 0px 40px 10px 40px;
+            padding-left: 10px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 5px;
+            margin: 0px;
+            text-align: center;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- sao todos divs, mas os navegadores valorizam mais um cabeçalho  do que um rodape e tal-->
+    <header><!--cabeçalho-->
+        <h1>meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main><!--conteudo principal-->
+        <section id="assuntos">
+            <p>Esportes, politica e tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article class="oi">
+                <h2>noticia sobre o sla oq</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, magnam. Odio totam repellat modi officiis explicabo, quia soluta architecto, dicta sed vitae asperiores odit fugit blanditiis sit quidem eveniet incidunt.</p>
+                <aside>
+                    <p>artido escrito por jose da silva</p>
+                </aside>
+            </article>
+        </section>
+
+    </main>
+    <footer><!--rodape-->
+        desenvolvido por cachorro molhado
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+@charset "UTF8";
+/* tudo que em html é id, em css é #
+tudo que em html é class, em css é .*/
+
+/* o id só pode um elemento, class pode varios*/
+
+
+body{
+    background-color: #185c63;
+    font-family: minecraft;
+    font-size: normal;
+}
+
+h1{
+    color: black;
+}
+
+h1#principal{
+    text-align: center;
+    background-color: #0d636b;
+}
+
+h2{
+    color: #000000;
+
+}
+
+.basico{
+    color: #042124;
+}
+
+.intermediario{
+    color: #128994;
+}
+
+.avançado{
+    color: #1ab89b;
+}
+
+.destaque{
+    background-color: rgb(56, 128, 192);
+}
+
