@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body.container{
+            display: flex;
+            flex-direction: column;
+            min-height: 98vh;
+        }
+
+        .header{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .content{
+            text-align: center;
+            border: 1px solid black;
+            display: flex;
+            flex: 1;
+        }
+
+        .main{
+            border: 1px solid black;
+            flex: 1;
+        }
+
+        .sidebar, .ads{
+            border: 1px solid black;
+            flex-basis: 100px;
+        }
+
+        .sidebar{
+            order: -1;
+        }
+
+        .footer{
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<!-- layout teoricamente ideal
+1)header, 3 colunas, footer
+2) colunas de tamnho igual
+3)rodape fixo
+4)conteudo primeiro no html
+5) marcacao minima
+-->
+<body class="container">
+    <header class="header">HEADER</header>
+    <div class="content">
+        <main class="main">CONTENT</main>
+        <aside class="sidebar">SIDE BAR</aside>
+        <aside class="ads">ADS</aside>
+    </div>
+    <footer class="footer">FOOTER</footer>
+</body>
+</html>
